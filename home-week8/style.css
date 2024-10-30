@@ -1,0 +1,175 @@
+@font-face{
+    font-family: 'Pretendard';
+    src:url('./fonts/Pretendard-ExtraLight.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Pretendard';
+    src:url('./fonts/Pretendard-Light.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Pretendard';
+    src:url('./fonts/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Pretendard';
+    src:url('./fonts/Pretendard-Medium.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Pretendard';
+    src:url('./fonts/Pretendard-Bold.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Pretendard';
+    src:url('./fonts/Pretendard-ExtraBold.woff') format('woff');
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Pretendard';
+    font-weight: 300;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.typing_game{
+    position: relative;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fffdf1;
+    padding: 40px 40px;
+    border-radius: 20px;
+}
+.typing_game>h1{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.typing_game>p{
+    font-size: 12px;
+    color: #333333;
+    font-weight: 100;
+}
+
+#quote{
+    background-color: #fff1b7;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin-top: 30px;
+}
+ .highlight {
+  background-color: #ebc400;
+ }
+ .error {
+  background-color: #ff4b8f8f;
+  border: red;
+ }
+ .input_box{
+    position: relative;
+    width: 360px;
+    height: 40px;
+    margin-top: 30px;
+ }
+ .input_box>input{
+    outline: none;
+    border: 0.5px solid #dcdcdc;
+    width: 250px;
+    height: 30px;
+ }
+ #start{
+    position: relative;
+    width: 100px;
+    height: 30px;
+    background-color: #f6bc0b;
+    color: white;
+    border: none;
+    font-weight: 200;
+    font-size: 13px;
+ }
+ #message{
+    background: #59bc7b;
+    padding: 10px 10px;
+    margin-top: 20px;
+    border-radius: 3px;
+    color: white;
+ }
+ #typed-value{
+    padding: 5px 5px;
+    font-weight: 200;
+ }
+#resultModal{
+    position: fixed;
+    background-color: #59bc7b;
+    padding: 3px 18px;
+    padding-bottom: 17px;
+    border-radius: 5px;
+    display: none;
+ }
+ .close-button{
+    color: white;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    cursor: pointer;
+ }
+ .modal-content>p{
+    color: white;
+    margin-bottom: 5px;
+ }
+#message{
+    display: none;
+ }
+:root {
+  --hue: 223;
+  --bg: hsl(var(--hue),90%,15%);
+  --fg: hsl(var(--hue),10%,90%);
+}
+input {
+  -webkit-appearance: none;
+  appearance: none;
+}
+input::placeholder {
+  color: hsla(var(--hue),10%,90%,0.3);
+}
+.sr {
+  clip: rect(1px,1px,1px,1px);
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+}
+.particle {
+  border-radius: 50%;
+  pointer-events: none;
+  position: fixed;
+  width: 1.5ch;
+  height: 1.5ch;
+}
+.particle--ring {
+  box-shadow: 0 0 0 0.125em inset;
+}

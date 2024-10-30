@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Typing game</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <section class="typing_game">
+       <h1>
+           Typing game!
+       </h1>
+       <p>
+           Practice your typing skills with a quote from Sherlock Holmes. Click
+           **start** to begin!
+       </p>
+       <p id="quote">시작 버튼을 누르세요.</p>
+       <p id="message">빠른까지 타이팅 해보세요.</p>
+       <div class="input_box">
+           <input type="text" aria-label="current word" id="typed-value" />
+           <button type="button" id="start">시작</button>
+       </div>
+   </section>
+
+   <!-- Modal for displaying result -->
+   <div id="resultModal" class="modal">
+       <div class="modal-content">
+           <span class="close-button">&times;</span>
+           <p id="result-message"></p>
+           <p id="high-score"></p>
+       </div>
+   </div>
+
+   <script src="script.js"></script>
+</body>
+
+</html>
